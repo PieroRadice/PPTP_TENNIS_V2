@@ -1,8 +1,10 @@
 const express = require("express");
 const https = require("https");
 const fs = require("fs");
-
 const app = express();
+
+require('dotenv/config');
+
 const PORT = process.env.PORT || 5000;
 const sslOptions = {
   key: fs.readFileSync("C:/Users/radic/CA/ROOTer-private-key.key"),
