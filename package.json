@@ -1,0 +1,21 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "web app per la gestione degli utenti",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piero Luigi Radice",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "nodemailer": "^6.9.4",
+    "sequelize": "^6.32.1"
+  }
+}
