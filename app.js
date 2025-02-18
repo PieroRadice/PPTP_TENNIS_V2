@@ -43,6 +43,6 @@ connessione
     console.error("Errore di connessione:", err);
   });
 
-http.createServer(sslOptions, app).listen(PORT, () => {
+http.createServer(app).listen(PORT, () => {
   console.log(`server in ascolto su porta ${PORT}`);
 });
