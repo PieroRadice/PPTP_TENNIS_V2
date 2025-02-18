@@ -1,18 +1,14 @@
 {
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3307,
-            "driver": "MariaDB",
-            "name": "COIsequelize",
-            "database": "utenticoi_1",
-            "username": "root",
-            "password": ""
-        }
-    ]
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "COIsequelize",
+      "database": "utenticoi_1",
+      "username": "postgres",
+      "password": "tua_password"
+    }
+  ]
 }

@@ -17,6 +17,7 @@ const getSignupVerify = (req, res) => {
 };
 
 const postSignup = (req, res) => {
+  console.log("post - sign up");
   const { email, password } = req.body;
   let user = null;
   Users.sync({ alter: true })
@@ -58,7 +59,7 @@ const confermaSignup = async (req, res) => {
       }
       const token = createToken(user.uuid);
       res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
-      res.redirect("/")
+      res.redirect("/");
     }
   } catch (error) {
     console.log(error);
@@ -77,7 +78,7 @@ const postLogin = async (req, res) => {
     res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000 });
     res.status(200).json({ user: user.uuid });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     const errors = handleErrors(err);
     res.status(400).json({ errors });
   }
