@@ -17,7 +17,7 @@ const getSignupVerify = (req, res) => {
 };
 
 const postSignup = (req, res) => {
-  console.log("post - sign up");
+  //console.log("post - sign up");
   const { email, password } = req.body;
   let user = null;
   Users.sync({ alter: true })
@@ -95,7 +95,7 @@ const checkLogin = async function (email, password) {
   //console.log(user);
   if (user) {
     const auth = await bcrypt.compare(password, user.password);
-    console.log("auth--- " + auth);
+    //console.log("auth--- " + auth);
     if (auth) {
       return user;
     }
